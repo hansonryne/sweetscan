@@ -1,0 +1,1125 @@
+Started GET "/" for 72.190.169.75 at 2018-02-18 07:04:33 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 616ms (Views: 364.1ms)
+
+
+Started GET "/" for 72.190.169.75 at 2018-02-18 07:04:45 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 23.5ms)
+
+
+Started GET "/nmap" for 72.190.169.75 at 2018-02-18 07:04:50 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/nmap"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/nmapscan" for 72.190.169.75 at 2018-02-18 07:04:57 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/nmapscan"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/nmapscans" for 72.190.169.75 at 2018-02-18 07:05:25 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for NmapscansController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 07:05:29 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 43ms (Views: 41.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-18 07:07:58 -0500
+Processing by WelcomeController#index as */*
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 43.6ms)
+
+
+Started GET "/" for 72.190.169.75 at 2018-02-18 07:07:58 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 36.4ms)
+
+
+Started GET "/" for 72.190.169.75 at 2018-02-18 07:17:21 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 483ms (Views: 264.9ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 07:17:28 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 45ms (Views: 43.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:17:34 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"1", "port"=>"1"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 26.3ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:19:20 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"1", "port"=>"1", "fragment"=>"true", "service_version"=>"true", "vuln"=>"true", "speed"=>"T1", "ping"=>"true"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 54.4ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:20:11 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"1", "port"=>"1"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:22:30 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "os"=>"true", "speed"=>"T4", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (4.6ms)
+Completed 200 OK in 828ms (Views: 267.9ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:23:11 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "os"=>"true", "speed"=>"T4", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (1.5ms)
+Completed 200 OK in 4295ms (Views: 140.3ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:32:58 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "speed"=>"T5", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.4ms)
+Completed 200 OK in 589ms (Views: 255.3ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:38:00 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.5ms)
+Completed 200 OK in 154ms (Views: 25.2ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:39:12 -0500
+Cannot render console from 72.190.169.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AViDXI+LVhBvqzYHa4VoEjvX021+TKbYjRDquJsNRswkavco/jg6p/sSsQ5h3aJ9nOgIdbiAEL+RGW84AEdn6w==", "nmapscan"=>{"target"=>"72.190.169.75", "port"=>"80", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.4ms)
+Completed 200 OK in 2683ms (Views: 23.7ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 07:49:45 -0500
+Cannot render console from 10.0.0.6! Allowed networks: 72.190.169.75, 127.0.0.0/127.255.255.255, ::1
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 510ms (Views: 287.4ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:50:25 -0500
+Cannot render console from 10.0.0.6! Allowed networks: 72.190.169.75, 127.0.0.0/127.255.255.255, ::1
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.8ms)
+Completed 200 OK in 129ms (Views: 27.9ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:50:48 -0500
+Cannot render console from 10.0.0.6! Allowed networks: 72.190.169.75, 127.0.0.0/127.255.255.255, ::1
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.4ms)
+Completed 200 OK in 130ms (Views: 28.5ms)
+
+
+Started GET "/nmapscans" for 72.190.169.75 at 2018-02-18 07:51:05 -0500
+Cannot render console from 10.0.0.6! Allowed networks: 72.190.169.75, 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for NmapscansController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:51:13 -0500
+Cannot render console from 10.0.0.6! Allowed networks: 72.190.169.75, 127.0.0.0/127.255.255.255, ::1
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.5ms)
+Completed 200 OK in 138ms (Views: 49.4ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:52:32 -0500
+Cannot render console from 10.0.0.6! Allowed networks: 72.190.169.75, 127.0.0.0/127.255.255.255, ::1
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "speed"=>"T5", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.5ms)
+Completed 200 OK in 131ms (Views: 39.6ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:52:52 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+  Rendering results.log within layouts/application
+  Rendered results.log within layouts/application (0.3ms)
+Completed 200 OK in 571ms (Views: 221.9ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:57:55 -0500
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/controllers/nmapscans_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    render :file => "results.html"
+                            ^
+/home/cabox/workspace/sweetscan/app/controllers/nmapscans_controller.rb:42: unterminated string meets end of file
+/home/cabox/workspace/sweetscan/app/controllers/nmapscans_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/nmapscans_controller.rb:42: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/nmapscans_controller.rb:42: unterminated string meets end of file
+app/controllers/nmapscans_controller.rb:42: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 07:59:16 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering results.html within layouts/application
+  Rendered results.html within layouts/application (1.5ms)
+Completed 200 OK in 114ms (Views: 54.2ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:10:30 -0500
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/controllers/nmapscans_controller.rb:37: syntax error, unexpected '=', expecting keyword_end
+      flash [:notice] = "Your port is wrong."
+                       ^):
+  
+app/controllers/nmapscans_controller.rb:37: syntax error, unexpected '=', expecting keyword_end
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:10:58 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVtAIGYpPitlDro+ctfCLTGbQGOA3zUqwFjTM9PaxM6MaTRUF5pSnPG3PTd4jwhClqSbe0YTg03cUVazSJDl6Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 108ms
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/nmapscans_controller.rb:46:in `create'
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:11:12 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 56ms (Views: 54.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:11:24 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4WvDFe5Gwhl/iadCYO2zXAg6rLtSN9NW2Ome21ZPy+Ct9t4Jgp3v/FHoZQD23yi1x8xqiuEaSpHaiP79hMeCA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 103ms
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/nmapscans_controller.rb:46:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:13:26 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4WvDFe5Gwhl/iadCYO2zXAg6rLtSN9NW2Ome21ZPy+Ct9t4Jgp3v/FHoZQD23yi1x8xqiuEaSpHaiP79hMeCA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Exception (something bad happened!):
+  
+app/controllers/nmapscans_controller.rb:39:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:13:49 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p4WvDFe5Gwhl/iadCYO2zXAg6rLtSN9NW2Ome21ZPy+Ct9t4Jgp3v/FHoZQD23yi1x8xqiuEaSpHaiP79hMeCA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Exception (something bad happened!):
+  
+app/controllers/nmapscans_controller.rb:39:in `create'
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:13:56 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 30ms (Views: 28.2ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:14:04 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Exception (something bad happened!):
+  
+app/controllers/nmapscans_controller.rb:39:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:15:39 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Exception (something bad happened!):
+  
+app/controllers/nmapscans_controller.rb:39:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:16:53 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Exception (something bad happened!):
+  
+app/controllers/nmapscans_controller.rb:39:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:18:45 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Exception (something bad happened!):
+  
+app/controllers/nmapscans_controller.rb:39:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:25:13 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.9ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:25:32 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "fragment"=>"true", "os"=>"true", "service_version"=>"true", "safe"=>"true", "vuln"=>"true", "speed"=>"T5", "ping"=>"true"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:25:41 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:25:46 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "ping"=>"true"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:26:47 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lkklhkv4AxKjdL24EYP/3V++GRJQfmAsax7JWh1PH2wLe1HyOktvpTfNOrEb2zWy+IHCCpay1kt3F0zahgU+Sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000", "speed"=>"T5"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:27:35 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 38ms (Views: 36.5ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:27:38 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 30ms (Views: 28.4ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:28:06 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 30ms (Views: 29.1ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:29:58 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 39ms (Views: 38.0ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:30:16 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 28.1ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:30:17 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 29ms (Views: 27.6ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:30:18 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 30ms (Views: 29.1ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:32:16 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 36ms (Views: 34.6ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:32:32 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 29ms (Views: 28.1ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:37:18 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2YI1rB6beBCkOIXZgkI904CETj+/HwFrO+SciHLdsxz8sEHYbygUpzCBAtCIGve8J7uVJ3nTtwwn7RkI6ZeSOw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 105ms
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/nmapscans_controller.rb:47:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:37:49 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2YI1rB6beBCkOIXZgkI904CETj+/HwFrO+SciHLdsxz8sEHYbygUpzCBAtCIGve8J7uVJ3nTtwwn7RkI6ZeSOw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"300012"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 100ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:37:50 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 34ms (Views: 32.2ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:40:26 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2FpcoE1s6GVnXS6/j5z3hjg0TZ1Rmt42BPaBTKWONpj9aCjUPN+E0vPkqbaFxD3pnwuWhZdWaFEY/wTMPsQXvw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 98ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:40:26 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 31ms (Views: 29.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:40:59 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"84NGHQDdHY8W4J4cER0JQT4jx5mZ6ch5Q55e/VCIXHfWsTJpcW5xOIJZGRUbRcMumRwcgV8lfh5fl9t9y8J9UA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 94ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:40:59 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 28ms (Views: 26.9ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:44:20 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JMUUpytlPhhOnf1b1mtq36OxImkIjh2I28XwWMydlZQB92DTWtZSr9okelLcM6CwBI75cc5Cq+/HzHXYV9e0sw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 100ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:44:20 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 41ms (Views: 37.4ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:44:25 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 33ms (Views: 32.0ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:44:32 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"05tI2DHtpm9WuyAmsxHvZ3jAK/Q5/UVWvnQfTImwHBH2qTysQF7K2MICpy+5SSUI3//w7P8x8zGifZrMEvo9Ng==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 100ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:44:33 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 30ms (Views: 28.3ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:53:58 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 30ms (Views: 28.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:54:06 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tC0KOnfYGqK9a3euclMZgFdqmjJT7UQQH57pYLezDHiRH35OBmt2FSnS8Kd4C9Pv8FVBKpUh8ncDl2zgLPktXw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 500 Internal Server Error in 71ms
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/nmapscans_controller.rb:48:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:54:44 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tC0KOnfYGqK9a3euclMZgFdqmjJT7UQQH57pYLezDHiRH35OBmt2FSnS8Kd4C9Pv8FVBKpUh8ncDl2zgLPktXw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:54:44 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 31ms (Views: 29.5ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:54:47 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 40ms (Views: 38.3ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:54:52 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hbYQx6+Oia9s03nfaolfwNZxEmc7oClsfpLnb5YTId6ghGSz3j3lGPhq/tZg0ZWvcU7Jf/1snwtim2LvDVkA+Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:54:52 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 27ms (Views: 25.7ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:54:58 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uP2WIz7Xo/SH2pua5pt+mvF2CflsDi8YtpYw5m/2kfH0YIs/UgyOEam7WdhwqeVzPoDPyN8jtt+091DAvX7YA==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:54:58 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 28.3ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:55:08 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 27.3ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:55:15 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gr3dm80qCSz2D47cYQsd1F3QUxhaGwM0gy0As9aAlJk/j6nvvJllm2K2CdVrU9e7+u+IAJzXtVOfJIUzTcq1vg==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:55:15 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 31ms (Views: 30.0ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:57:52 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 36ms (Views: 34.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:58:00 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nnLY9FlunNgLPYFx3S45h5X4hXvgBtL69Pb0s5vJvja7QKyAKN3wb5+EBnjXdvPoMsdeYybKZJ3o/3EzAIOfEQ==", "nmapscan"=>{"target"=>"", "port"=>"3000", "service_version"=>"true"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:58:00 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 29ms (Views: 27.6ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:58:11 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"892y1PJMIsMeycJQXxcbuntgaGVjZ9cd32MTBRWTzUfW78agg/9OdIpwRVlVT9HV3F+zfaWrYXrDapaFjtnsYA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"3000"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 08:58:11 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 08:59:35 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q/+IeEq10AZsaH3OMCPU2Of63Lnzf8OgR1aksTJS47KOzfwMOwa8sfjR+sc6ex63QMUHoTWzdcdbXyExqRjClQ==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:00:19 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 40ms (Views: 38.4ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:00:24 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcpGwjf+7hKqq92SADLa5dalKGNbmDIAM1cL+znqhiNY+DK2Rk2CpT4SWpsKahCKcZrze51UhGcvXo57oqCnBA==", "nmapscan"=>{"target"=>"", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:00:24 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 29ms (Views: 27.5ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:00:27 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 31ms (Views: 29.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:00:40 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rONue2QBi/0jiv4Zn2vaSvBs7IuW9mQFgWURLhqs4OKJ0RoPFbLnSrczeRCVMxAlV1M3k1A60mKdbJSugebBxQ==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:00:40 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 28ms (Views: 27.3ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:01:26 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 30ms (Views: 28.6ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:01:34 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fTDoc3k8MMUelIIztjJ6N0Ppawz6ihu5JzCoqT8nVGtYApwHCI9ccootBTq8arBY5NawFDxGrd47OS0ppG11TA==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:01:35 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 30ms (Views: 28.7ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:09:33 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 30.7ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:09:47 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C9xVa2A3jcJdg7TTMGKQ/a+2akUHv5YTkawjg3Ql87wu7iEfEYThdck6M9o6OlqSCImxXcFzIHSNpaYD72/Smw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"", "speed"=>"T5", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:09:47 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 28.0ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:10:03 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ZeBRS7zUQ8yXZJbw+jWFPUXZO0ZyFTUG2LHnw35klvQpfUxX0A9uKbkFVLJsBx7Uii/9d8E4rMHa0IflrOzfA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22", "speed"=>"T5", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:10:04 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 30ms (Views: 28.2ms)
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:10:10 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 28ms (Views: 27.0ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:10:25 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X1ZWgrinNrTUz2Z9x2uSbskR734tPAWXI0bQmrTB3SB6ZCL2yRRaA0B24XTNM1gBbi40Zuvws/A/T1UaL4v8Bw==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22", "speed"=>"T5", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:10:25 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 33ms (Views: 31.7ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:11:18 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"692rk5qCPXApxPPZEc67flZMjvfWgQXg3LVRlNu+WnbO79/n6zFRx719dNAblnER8XNV7xBNs4fAvNQUQPR7UQ==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22", "speed"=>"T5", "ping"=>"false"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:11:19 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 28ms (Views: 27.1ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:11:45 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8IF9ZCNCPD9yIXq049caNYmniz7Bi21/C+njWY57jMi8HGB4T5kR2lxAuPZ15YHcRlFND3Km9LgJiIN/XPPFA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:13:30 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8IF9ZCNCPD9yIXq049caNYmniz7Bi21/C+njWY57jMi8HGB4T5kR2lxAuPZ15YHcRlFND3Km9LgJiIN/XPPFA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:13:31 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 30ms (Views: 28.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:14:11 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MyJLvGNPvOoeZzEyuzX3LVrTT1KHL1F3eMe+fn9XBDkWED/IEvzQXYretjuxbT1C/eyUSkHj5xBkzjv+5B0lHg==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:14:11 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 32ms (Views: 30.3ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:14:56 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DkYBkqjc9l+wQwM56Y03MTMtWwFThVzKqeBNj4Pi9CUrdHXm2W+a6CT6hDDj1f1elBKAGZVJ6q216cgPGKjVAg==", "nmapscan"=>{"target"=>"", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 2ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:14:56 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 29ms (Views: 27.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:15:31 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BZoKem5o5vajDrWvaRT2M60biOiTO9yjJ7V+6gI5hyIgqH4OH9uKQTe3MqZjTDxcCiRT8FX3asQ7vPtqmXOmBQ==", "nmapscan"=>{"target"=>"", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:15:32 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 30ms (Views: 28.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:16:04 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fU/DnXSnSDL31d4hbF34td5/bMmY0329BkLlSTQctf5YfbfpBRQkhWNsWShmBTLaeUC30V4fy9oaS2DJr1aU2Q==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:16:05 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 29ms (Views: 28.0ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:18:13 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0aLXUW9BWW8Pa46YXqcHaMaK+UCkbnV6N/SWjguop8edP8pNA5p0iiEKTNrIlZyBCXw/cRdD7L01lfao2SDuA==", "nmapscan"=>{"target"=>"", "port"=>""}, "commit"=>"Save Nmapscan"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `~' for "/^.{1,5}$/":String):
+  
+app/controllers/nmapscans_controller.rb:34:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:18:50 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0aLXUW9BWW8Pa46YXqcHaMaK+UCkbnV6N/SWjguop8edP8pNA5p0iiEKTNrIlZyBCXw/cRdD7L01lfao2SDuA==", "nmapscan"=>{"target"=>"", "port"=>""}, "commit"=>"Save Nmapscan"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+TypeError (type mismatch: String given):
+  
+app/controllers/nmapscans_controller.rb:34:in `=~'
+app/controllers/nmapscans_controller.rb:34:in `create'
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:19:05 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0aLXUW9BWW8Pa46YXqcHaMaK+UCkbnV6N/SWjguop8edP8pNA5p0iiEKTNrIlZyBCXw/cRdD7L01lfao2SDuA==", "nmapscan"=>{"target"=>"", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:19:06 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 31ms (Views: 29.7ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:19:12 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HJlCXLhijB8A+KAM15VqfSYdCSng25/jdJiDigc6Cio5qzYoydHgqJRBJwXdzaASgSLSMSYXKYRokQYKnHArDQ==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+  Rendering results.html within layouts/application
+  Rendered results.html within layouts/application (1.0ms)
+Completed 200 OK in 79ms (Views: 24.6ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:28:19 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HJlCXLhijB8A+KAM15VqfSYdCSng25/jdJiDigc6Cio5qzYoydHgqJRBJwXdzaASgSLSMSYXKYRokQYKnHArDQ==", "nmapscan"=>{"target"=>"", "port"=>"23"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:28:20 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 35ms (Views: 33.4ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:28:24 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"odir0bU8FWOARDLrAc5K9CXTEkQAQ5QGy+XzHwj9h9CE6t+lxI951BT9teILloCbguzJXMaPImHX7Hafk7em9w==", "nmapscan"=>{"target"=>"", "port"=>""}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:28:24 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 41ms (Views: 39.8ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:28:31 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a1NvF+H/EePVrA5g4ZEDRt6fsR5wVhPmaj6KUO/m/qhOYRtjkEx9VEEViWnryckpeaBqBraapYF2Nw/QdKzfjw==", "nmapscan"=>{"target"=>"", "port"=>"42"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:28:32 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 35ms (Views: 33.2ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:28:39 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQ1ixvevrWCaAhT5BP2Mogx3NWgqUDKD9mHceztyjGq8PxayhhzB1w67k/AOpUbNq0jucOychOTqaFn7oDitTQ==", "nmapscan"=>{"target"=>"123", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans/new
+Completed 302 Found in 1ms
+
+
+Started GET "/nmapscans/new" for 72.190.169.75 at 2018-02-18 09:28:39 -0500
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 30ms (Views: 28.5ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:28:50 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tJByMZJhoo/Xr4Odc7s10Xe3eI6v50IyIAeXElrTkBmRogZF49LOOEMWBJR54/++0Iijlmkr9FU8DhKSwZmxPg==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+  Rendering results.html within layouts/application
+  Rendered results.html within layouts/application (0.9ms)
+Completed 200 OK in 81ms (Views: 27.6ms)
+
+
+Started POST "/nmapscans" for 72.190.169.75 at 2018-02-18 09:29:46 -0500
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tJByMZJhoo/Xr4Odc7s10Xe3eI6v50IyIAeXElrTkBmRogZF49LOOEMWBJR54/++0Iijlmkr9FU8DhKSwZmxPg==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22"}, "commit"=>"Save Nmapscan"}
+  Rendering results.html within layouts/application
+  Rendered results.html within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 26.4ms)
+
+

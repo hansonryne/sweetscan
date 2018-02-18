@@ -30,15 +30,30 @@ class NmapscansController < ApplicationController
   	if params[:nmapscan][:vuln].present? == true
   		command.concat("--script vuln ")
   	end
-
-  	if params[:nmapscan][:port].present? == true
-  		command.concat("-p #{params[:nmapscan][:port]} ")
+    
+    if not params[:nmapscan][:port] =~ /^.{1,5}$/
+      flash[:notice] = "Your port is wrong"
+      redirect_to "/nmapscans/new"
+      return
+    else
+      command.concat("-p #{params[:nmapscan][:port]} ")
+    end
+    
+    if not params[:nmapscan][:target] =~ /^(\w{1,2}|1\w{2}|2[0-4]\w|25[0-5])\.(\w{1,2}|1\w{2}|2[0-4]\w|25[0-5])\.(\w{1,2}|1\w{2}|2[0-4]\w|25[0-5])\.(\w{1,2}|1\w{2}|2[0-4]\w|25[0-5])$/
+      flash[:notice] = "Your IP is wrong."
+      redirect_to "/nmapscans/new"
+      return
+    else
+      command.concat("#{params[:nmapscan][:target]}")
   	end
 
-    command.concat("#{params[:nmapscan][:target]}")
+    system "#{command} -oX test.xml > /dev/null"
+    system "xsltproc test.xml -o results.html"
+    render :file => "results.html"
 
-    system "#{command} > results.log"
-    render :file => "results.log"
+    @scan = Nmapscan.new(params.require(:nmapscan).permit(:target, :port, :vuln, :safe, :os, :service_version, :zombie, :fragment))
+    rail
+      
 #=end
   end
 end
