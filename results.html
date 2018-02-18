@@ -283,7 +283,7 @@
   
 }
 </style>
-<title>Nmap Scan Report - Scanned at Sun Feb 18 09:29:46 2018</title>
+<title>Nmap Scan Report - Scanned at Sun Feb 18 10:26:46 2018</title>
 <script type="text/javascript">
      
       
@@ -329,7 +329,7 @@
 </head>
 <body>
 <a name="top"></a><div id="container">
-<h1>Nmap Scan Report - Scanned at Sun Feb 18 09:29:46 2018</h1>
+<h1>Nmap Scan Report - Scanned at Sun Feb 18 10:26:46 2018</h1>
 <ul id="menu">
 <li><a href="#scansummary">Scan Summary</a></li>
 <li> | <a href="#host_127_0_0_1" class="up">localhost.localdomain (127.0.0.1)
@@ -339,10 +339,10 @@
 <a name="scansummary"></a><hr class="print_only">
 <h2>Scan Summary</h2>
 <p>
-      Nmap 6.40 was initiated at Sun Feb 18 09:29:46 2018 with these arguments:<br><i>nmap -p 22 -oX test.xml 127.0.0.1</i><br></p>
+      Nmap 6.40 was initiated at Sun Feb 18 10:26:46 2018 with these arguments:<br><i>nmap -sV -O -p 3000 -oX test.xml 127.0.0.1</i><br></p>
 <p>
     Verbosity: 0; Debug level 0</p>
-<p>Nmap done at Sun Feb 18 09:29:46 2018; 1 IP address (1 host up) scanned in 0.04 seconds</p>
+<p>Nmap done at Sun Feb 18 10:26:56 2018; 1 IP address (1 host up) scanned in 10.27 seconds</p>
 <hr class="print_only">
 <a name="host_127_0_0_1"></a><h2 class="up">127.0.0.1 / localhost.localdomain<span class="print_only">(online)</span>
 </h2>
@@ -370,16 +370,36 @@
 <td>Extra info</td>
 </tr>
 <tr class="open">
-<td>22</td>
+<td>3000</td>
 <td>tcp</td>
 <td>open</td>
-<td>ssh </td>
+<td>http-proxy </td>
 <td>syn-ack</td>
-<td> </td>
+<td>sslstrip </td>
 <td> </td>
 <td> </td>
 </tr>
 </table>
+<h3>Remote Operating System Detection</h3>
+<ul>
+<li>Used port: <b>3000/tcp</b> (<b>open</b>)  </li>
+<li>Used port: <b>43737/udp</b> (<b>closed</b>)  </li>
+<li>OS match: <b>Linux 3.7 - 3.9</b> (<b>96%</b>)</li>
+<li>OS match: <b>Netgear DG834G WAP or Western Digital WD TV media player</b> (<b>96%</b>)</li>
+<li>OS match: <b>Linux 3.1</b> (<b>95%</b>)</li>
+<li>OS match: <b>Linux 3.2</b> (<b>95%</b>)</li>
+<li>OS match: <b>AXIS 210A or 211 Network Camera (Linux 2.6)</b> (<b>94%</b>)</li>
+<li>OS match: <b>Linux 3.7</b> (<b>93%</b>)</li>
+<li>OS match: <b>Linux 3.9</b> (<b>93%</b>)</li>
+<li>OS match: <b>Linux 2.6.18 (SMP)</b> (<b>93%</b>)</li>
+<li>OS match: <b>Linux 3.1 - 3.2</b> (<b>92%</b>)</li>
+<li>OS match: <b>Linux 2.6.32 - 3.6</b> (<b>92%</b>)</li>
+</ul>
+
+
+
+
+
 
 <br><a href="javascript:toggle('metrics_127.0.0.1');">
     Misc Metrics <span class="noprint"><small> (click to expand)</small></span></a><div id="metrics_127.0.0.1" class="hidden"><table cellspacing="1">
@@ -389,7 +409,24 @@
 </tr>
 <tr>
 <td>Ping Results</td>
-<td>conn-refused</td>
+<td>localhost-response</td>
+</tr>
+<tr>
+<td>System Uptime</td>
+<td>3926918 seconds  (last reboot: Wed Jan  3 23:38:18 2018)
+        </td>
+</tr>
+<tr>
+<td>Network Distance</td>
+<td>0 hops</td>
+</tr>
+<tr>
+<td>TCP Sequence Prediction</td>
+<td>Difficulty=260 (Good luck!)</td>
+</tr>
+<tr>
+<td>IP ID Sequence Generation</td>
+<td>All zeros</td>
 </tr>
 </table></div>
 </div>

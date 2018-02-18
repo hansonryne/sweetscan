@@ -13,27 +13,27 @@
 
   <p>
     <%= form.label :evasion %></br>
-    <%= form.check_box :fragment, {}, true, nil %>
+    <%= form.check_box :fragment %>
     <%= label_tag :fragment, "Fragment Packets" %>
 <!--    
-    <%= form.check_box :zombie, {}, true, nil %>
+    <%= form.check_box :zombie %>
     <%= label_tag :zombie, "Zombie Scan" %> 
 -->
   </p>
 
   <p>
     <%= form.label :version_detection %></br>
-    <%= form.check_box :os, {}, true, nil %>
+    <%= form.check_box :os %>
     <%= label_tag :os, "Operating System" %></br>
-    <%= form.check_box :service_version, {}, true, nil %>
+    <%= form.check_box :service_version %>
     <%= label_tag :service_version, "Service Version" %>
   </p>
 
     <p>
     <%= form.label :scripts %></br>
-    <%= form.check_box :safe, {}, true, nil %>
+    <%= form.check_box :safe %>
     <%= label_tag :safe, "Safe" %></br>
-    <%= form.check_box :vuln, {}, true, nil %>
+    <%= form.check_box :vuln %>
     <%= label_tag :vuln, "Vulnerability" %>
   </p>
 
