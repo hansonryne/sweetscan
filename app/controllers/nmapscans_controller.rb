@@ -1,22 +1,38 @@
 class NmapscansController < ApplicationController
 
+  def index
+    @nmapscans = Nmapscan.all
+  end
+  
   def show
-    @scan = Nmapscan.find(params[:id])
+    @nmapscan = Nmapscan.find(params[:id])
+    render file: "public/nmapscans/#{@nmapscan.filename}"
   end
   
   def new
+    @nmapscan = Nmapscan.new
   end
 
-  def create
-  	render plain: params[:nmapscan].inspect
-    
-    @scan = Nmapscan.new(nmapscan_params)
+  def create    
+    @nmapscan = Nmapscan.new(nmapscan_params)
         
-    @scan.save
-    redirect_to @scan
+    respond_to do |format|
+      if @nmapscan.save
+        format.html { redirect_to @nmapscan, notice: 'Item was successfully created.' }
+        format.json { render json: @nmapscan, status: :created, location: @nmapscan }
+      else
+        format.html { render action: "new", notice: "'#{@nmapscan.errors}" }
+        format.json { render json: @nmapscan.errors, status: :unprocessable_entity }
+      end
+    end
   end
   
-
+  def destroy
+    @nmapscan = Nmapscan.find(params[:id])
+    @nmapscan.destroy
+ 
+    redirect_to nmapscans_path
+  end
   
   private
     def nmapscan_params

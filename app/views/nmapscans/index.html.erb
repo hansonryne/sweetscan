@@ -1,0 +1,21 @@
+<h1>Listing Nmap Scans</h1>
+ <%= link_to 'New Nmap Scan', new_nmapscan_path %>
+<table>
+  <tr>
+    <th>Target</th>
+    <th>Port</th>
+    <th>Created At</th>
+  </tr>
+ 
+  <% @nmapscans.each do |nmapscan| %>
+    <tr>
+      <td><%= nmapscan.target %></td>
+      <td><%= nmapscan.port %></td>
+      <td><%= nmapscan.updated_at %></td>
+      <td><%= link_to 'Show', nmapscan_path(nmapscan) %></td>
+      <td><%= link_to 'Destroy', nmapscan_path(nmapscan),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
