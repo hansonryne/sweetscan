@@ -2,7 +2,7 @@
   <ul class="title-area">
 
     <li class="name">
-        <%= link_to image_tag("sweetlogo.jpg", size: "140x40", :alt => "sweetscanlogo"), root_path %>
+        <%= link_to image_tag("sweetlogo.jpg", height: "100em", width: "100em", :alt => "sweetscanlogo"), root_path %>
         <h1 style="display: inline; color: #fff; font-weight: bold; font-size: x-large">Scan</h1>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
@@ -21,6 +21,10 @@
           <li><a href="#">Dropdown Option</a></li>
           <li class="divider"></li>
           <li><label>Previous Scans</label></li>
+          <% @nmapscans.each do |nmapscan| %>
+            <li><%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %></li>
+          <% end %>
+          
           <li><a href="#">Dropdown Option</a></li>
           <li><a href="#">Dropdown Option</a></li>
           <li><a href="#">Dropdown Option</a></li>
