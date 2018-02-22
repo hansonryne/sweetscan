@@ -4,7 +4,7 @@ class Nmapscan < ApplicationRecord
   validates :port, :format => {:with => /\A([1-9]|[1-9][0-9]{1,3}|[1-5][0-9]{0,4}|6[0-4][0-9]{0,3}|65[0-4][0-9]{0,2}|655[0-2][0-9]|6553[0-5])\z/,
                                :message => " must be a number between 1 and 65535."}
   
-  before_save :do_nmap_scan
+  #before_save :do_nmap_scan
   before_destroy :cleanup_files
   
   def do_nmap_scan
@@ -61,6 +61,8 @@ class Nmapscan < ApplicationRecord
     system "sudo #{command} -oX #{outfile} > /dev/null"
     system "xsltproc #{outfile} -o public/nmapscans/#{outfile}.html"
     system "rm -rf #{outfile}"
+    
+    self.save
   end
   
   def cleanup_files

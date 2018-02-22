@@ -26,9 +26,17 @@
 
 <body>
   <%= render 'layouts/header' %>
-    <%= yield %>
-      <%= render 'layouts/footer' %>
-        <%= javascript_include_tag "application" %>
+  
+  <% if flash[:alert] %>
+    <p class="flash-error"><%= flash[:alert] %></p>
+  <% end %>
+  <% if flash[:notice] %>
+    <p class="flash-notice"><%= flash[:notice] %></p>
+  <% end %>
+  
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+  <%= javascript_include_tag "application" %>
 </body>
 
 </html>

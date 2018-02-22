@@ -12,13 +12,18 @@
  
   <% @nmapscans.each do |nmapscan| %>
     <tr>
-      <td><%= nmapscan.target %></td>
-      <td><%= nmapscan.port %></td>
-      <td><%= nmapscan.updated_at %></td>
-      <td><%= link_to 'Show', nmapscan_path(nmapscan) %></td>
-      <td><%= link_to 'Destroy', nmapscan_path(nmapscan),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+      <% if nmapscan.filename.present? %>
+        <td><%= nmapscan.target %></td>
+        <td><%= nmapscan.port %></td>
+        <td><%= nmapscan.updated_at %></td>
+        <td><%= link_to 'Show', nmapscan_path(nmapscan) %></td>
+        <td><%= link_to 'Destroy', nmapscan_path(nmapscan),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>
+
+
+<%= button_to "Refresh List", nmapscans_path, :class => "button small", :method => :get %>

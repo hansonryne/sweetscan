@@ -17,19 +17,12 @@
           <li class="">
             <%= link_to "New Scan", new_nmapscan_path %>
           </li>
-          <li><a href="#">Dropdown Option</a></li>
-          <li><a href="#">Dropdown Option</a></li>
           <li class="divider"></li>
           <li><label>Previous Scans</label></li>
           <% @nmapscans.each do |nmapscan| %>
             <li><%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %></li>
           <% end %>
-          
-          <li><a href="#">Dropdown Option</a></li>
-          <li><a href="#">Dropdown Option</a></li>
-          <li><a href="#">Dropdown Option</a></li>
-          <li class="divider"></li>
-          <li><a href="#">See all &rarr;</a></li>
+          <li><%= link_to 'See all &rarr;'.html_safe, nmapscans_path %></li>
         </ul>
       </li>
       <li class="divider"></li>
@@ -42,7 +35,7 @@
           <li><a href="#">Dropdown Option</a></li>
           <li><a href="#">Dropdown Option</a></li>
           <li class="divider"></li>
-          <li><a href="#">See all &rarr;</a></li>
+          <li><a href="#">See All &rarr;</a></li>
         </ul>
       </li>
     </ul>

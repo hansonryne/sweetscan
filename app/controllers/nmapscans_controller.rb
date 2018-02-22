@@ -15,10 +15,12 @@ class NmapscansController < ApplicationController
 
   def create    
     @nmapscan = Nmapscan.new(nmapscan_params)
-        
+    
     respond_to do |format|
       if @nmapscan.save
-        format.html { redirect_to @nmapscan, notice: 'Item was successfully created.' }
+        NmapScanJob.perform_later(@nmapscan)
+        format.html {redirect_to nmapscans_path, notice: 'Scan is running in the background'}
+        #format.html { redirect_to @nmapscan, notice: 'Item was successfully created.' }
         format.json { render json: @nmapscan, status: :created, location: @nmapscan }
       else
         format.html { render action: "new", notice: "'#{@nmapscan.errors}" }
