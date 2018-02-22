@@ -1,89 +1,77 @@
+  <div class="row">
+    <div class="large-12 columns">
 
-<!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foundation 5</title>
-
-
-</head>
-<body>
-
-<div class="row">
-<div class="large-12 columns">
-
-<div class="row">
-<div class="large-12 hide-for-small">
-<div id="featured" data-orbit>
-<img src="https://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-<img src="https://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
-<img src="https://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
-</div>
-</div>
-</div>
-  
-<div class="row">
-<div class="large-12 columns show-for-small">
-<img src="https://placehold.it/1200x700&text=Mobile Header">
-</div>
-</div><br>
-  
-
-
-  
-<div class="row">
-<div class="large-12 columns">
-<div class="row">
-
-      <div class="large-4 small-6 columns">
-        <h4>
-          Recent Nmap Scans
-        </h4><hr>
-          <% @nmapscans.each do |nmapscan| %>
-          <% if nmapscan.filename.present? %>
-            <div class="row">
-              <div class="large-1 column">
-              </div>
-                <div class="large-9 columns">
-                <h5><%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %></h5>
-                </div>
-              </div><hr>
-            <% end %>
-            <% end %>
+      <div class="row">
+        <div class="large-12 hide-for-small">
+          <div id="featured" data-orbit>
+            <img src="https://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
+            <img src="https://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
+            <img src="https://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
+          </div>
+        </div>
       </div>
 
-<div class="large-4 small-6 columns">
-<img src="https://placehold.it/300x465&amp;text=Image">
-</div>
+      <div class="row">
+        <div class="large-12 columns show-for-small">
+          <img src="https://placehold.it/1200x700&text=Mobile Header">
+        </div>
+      </div><br>
 
 
-<div class="large-4 small-12 columns">
-<h4>Blog</h4><hr>
-<div class="panel">
-<h5><a href="#">Post Title 1</a></h5>
-<h6 class="subheader">
-Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-</h6>
-<h6><a href="#">Read More »</a></h6>
-</div>
-<div class="panel hide-for-small">
-<h5><a href="#">Post Title 2 »</a></h5>
-</div>
-<div class="panel hide-for-small">
-<h5><a href="#">Post Title 3 »</a></h5>
-</div>
-<a href="#" class="right">Go To Blog »</a>
-</div>
 
-</div>
-</div>
-</div>
 
-</div>
-</div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
 
-</body>
-</html>
+            <div class="large-4 small-6 columns">
+              <h4>
+                Recent Nmap Scans
+              </h4>
+              <hr>
+              <% @nmapscans.each do |nmapscan| %>
+                <% if nmapscan.filename.present? %>
+                  <div class="row">
+                    <div class="large-1 column">
+                    </div>
+                    <div class="large-9 columns">
+                      <h5>
+                        <%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %>
+                      </h5>
+                    </div>
+                  </div>
+                  <hr>
+                  <% end %>
+                    <% end %>
+            </div>
+
+            <div class="large-4 small-6 columns">
+              <img src="https://placehold.it/300x465&amp;text=Image">
+            </div>
+
+
+            <div class="large-4 small-12 columns">
+              <h4>Blog</h4>
+              <hr>
+              <div class="panel">
+                <h5><a href="#">Post Title 1</a></h5>
+                <h6 class="subheader">
+                  Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
+                </h6>
+                <h6><a href="#">Read More »</a></h6>
+              </div>
+              <div class="panel hide-for-small">
+                <h5><a href="#">Post Title 2 »</a></h5>
+              </div>
+              <div class="panel hide-for-small">
+                <h5><a href="#">Post Title 3 »</a></h5>
+              </div>
+              <a href="#" class="right">Go To Blog »</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
