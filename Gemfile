@@ -33,8 +33,11 @@ gem 'jbuilder', '~> 2.5'
 #Use Dynamic Form for error handling
 gem 'dynamic_form'
 
-#Usef Foundation for Styling
+#Use Foundation for Styling
 gem 'foundation-rails'
+
+#Use Nokogiri
+gem 'nokogiri'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

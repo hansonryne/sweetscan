@@ -8363,3 +8363,389 @@ Processing by NmapscansController#show as HTML
 Completed 200 OK in 61ms (Views: 52.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 172.58.109.27 at 2018-02-22 10:26:01 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 424ms (Views: 408.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/nmapscans/17" for 172.58.109.27 at 2018-02-22 10:26:13 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mNmapscan Load (0.6ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" WHERE "nmapscans"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering public/nmapscans/201802190221nmap.html within layouts/application
+  Rendered public/nmapscans/201802190221nmap.html within layouts/application (1.0ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.58.109.27 at 2018-02-22 10:26:20 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans/new" for 172.58.109.27 at 2018-02-22 10:26:25 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (78.0ms)
+  Rendered nmapscans/new.html.erb within layouts/application (80.9ms)
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 138ms (Views: 135.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.58.109.27 at 2018-02-22 10:26:33 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans/new" for 172.58.109.27 at 2018-02-22 10:26:41 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (11.1ms)
+  Rendered nmapscans/new.html.erb within layouts/application (13.2ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nmapscans/new" for 172.58.109.27 at 2018-02-22 10:26:41 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (6.9ms)
+  Rendered nmapscans/new.html.erb within layouts/application (9.1ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans/new" for 172.58.109.27 at 2018-02-22 10:26:41 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (7.1ms)
+  Rendered nmapscans/new.html.erb within layouts/application (8.7ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans/new" for 172.58.109.27 at 2018-02-22 10:26:41 -0500
+Cannot render console from 172.58.109.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (8.4ms)
+  Rendered nmapscans/new.html.erb within layouts/application (10.1ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.229.179.254 at 2018-02-22 10:27:19 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.229.179.254 at 2018-02-22 10:27:26 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.229.179.254 at 2018-02-22 10:27:42 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.229.179.254 at 2018-02-22 10:27:46 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/nmapscans" for 71.229.179.254 at 2018-02-22 10:27:55 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans" for 71.229.179.254 at 2018-02-22 10:28:01 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nmapscans" for 71.229.179.254 at 2018-02-22 10:28:08 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/nmapscans/new" for 71.229.179.254 at 2018-02-22 10:28:13 -0500
+Cannot render console from 71.229.179.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (8.0ms)
+  Rendered nmapscans/new.html.erb within layouts/application (9.7ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:32:09 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (29.7ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (7.0ms)
+Completed 200 OK in 588ms (Views: 559.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:34:49 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:35:49 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:37:52 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:38:08 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:38:59 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:39:17 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:40:11 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:40:28 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:42:33 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:42:49 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:43:15 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:45:15 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:46:13 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.6ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:46:39 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 72.215.39.55 at 2018-02-23 13:47:06 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans/17" for 72.215.39.55 at 2018-02-23 13:57:48 -0500
+Cannot render console from 72.215.39.55! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mNmapscan Load (22.5ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" WHERE "nmapscans"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering public/nmapscans/201802190221nmap.html within layouts/application
+  Rendered public/nmapscans/201802190221nmap.html within layouts/application (25.4ms)
+  [1m[36mNmapscan Load (8.0ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (62.4ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 874ms (Views: 567.6ms | ActiveRecord: 30.5ms)
+
+

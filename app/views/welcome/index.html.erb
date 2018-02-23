@@ -1,6 +1,7 @@
   <div class="row">
     <div class="large-12 columns">
 
+<!--
       <div class="row">
         <div class="large-12 hide-for-small">
           <div id="featured" data-orbit>
@@ -16,8 +17,15 @@
           <img src="https://placehold.it/1200x700&text=Mobile Header">
         </div>
       </div><br>
+-->
 
-
+      <div class="row">
+        <div class="large-12 columns">
+          <h1 class="text-center">
+            Test text
+          </h1>
+        </div>
+      </div>
 
 
       <div class="row">
@@ -32,8 +40,6 @@
               <% @nmapscans.each do |nmapscan| %>
                 <% if nmapscan.filename.present? %>
                   <div class="row">
-                    <div class="large-1 column">
-                    </div>
                     <div class="large-9 columns">
                       <h5>
                         <%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %>
@@ -46,12 +52,16 @@
             </div>
 
             <div class="large-4 small-6 columns">
-              <img src="https://placehold.it/300x465&amp;text=Image">
+              <div class="row">
+                <div class="text-center large-12 columns">
+                  Masscan Section
+                </div>
+              </div>
             </div>
 
 
             <div class="large-4 small-12 columns">
-              <h4>Blog</h4>
+              <h4>Reports</h4>
               <hr>
               <div class="panel">
                 <h5><a href="#">Post Title 1</a></h5>
