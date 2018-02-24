@@ -37,7 +37,7 @@
                 Recent Nmap Scans
               </h4>
               <hr>
-              <% @nmapscans.each do |nmapscan| %>
+              <% @nmapscans.reverse.each do |nmapscan| %>
                 <% if nmapscan.filename.present? %>
                   <div class="row">
                     <div class="large-9 columns">

@@ -1,0 +1,8 @@
+<port protocol="tcp" portid="22">
+  <state state="open" reason="syn-ack" reason_ttl="0"/>
+  <service name="ssh" method="table" conf="3"/>
+</port>
+<port protocol="tcp" portid="3000">
+  <state state="open" reason="syn-ack" reason_ttl="0"/>
+  <service name="ppp" method="table" conf="3"/>
+</port>

@@ -1,4 +1,4 @@
-<%= form_with scope: :nmapscan, url: nmapscans_path, local: true do |form| %>
+  <%= form_with scope: :nmapscan, url: nmapscans_path, local: true do |form| %>
   <% if @nmapscan.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@nmapscan.errors.count, "error") %> prohibited this scan from being saved:</h2>

@@ -58,6 +58,7 @@ class Nmapscan < ApplicationRecord
     
     command.concat("-p #{self.port} #{target}")
     
+    #remove the > /dev/null eventually
     system "sudo #{command} -oX #{outfile} > /dev/null"
     system "xsltproc #{outfile} -o public/nmapscans/#{outfile}.html"
     system "rm -rf #{outfile}"

@@ -6,7 +6,7 @@ class NmapscansController < ApplicationController
   
   def show
     @nmapscan = Nmapscan.find(params[:id])
-    render file: "public/nmapscans/#{@nmapscan.filename}"
+    #render file: "public/nmapscans/#{@nmapscan.filename}"
   end
   
   def new

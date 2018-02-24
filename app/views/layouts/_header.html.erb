@@ -19,7 +19,7 @@
           </li>
           <li class="divider"></li>
           <li><label>Previous Scans</label></li>
-          <% @nmapscans.each do |nmapscan| %>
+          <% @nmapscans.reverse.first(3).each do |nmapscan| %>
             <li><%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %></li>
           <% end %>
           <li><%= link_to 'See all &rarr;'.html_safe, nmapscans_path %></li>
