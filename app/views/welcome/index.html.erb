@@ -21,47 +21,49 @@
 
       <div class="row">
         <div class="large-12 columns">
-          <h1 class="text-center">
-            Test text
+          <h1 class="text-center" style="font-weight:bolder; font-family:'Comic Sans MS'">
+            WELCOME TO 
+            <span class="rainbow">SWEETSCAN</span>
           </h1>
         </div>
       </div>
+      
 
-
-      <div class="row">
-        <div class="large-12 columns">
           <div class="row">
-
             <div class="large-4 small-6 columns">
-              <h4>
-                Recent Nmap Scans
-              </h4>
+              <h3 style="font-weight:bolder;">
+                <%= link_to "NMAP", nmapscans_path %>
+              </h3>
               <hr>
+              <h4>
+                Recent Scans
+              </h4>
               <% @nmapscans.reverse.each do |nmapscan| %>
                 <% if nmapscan.filename.present? %>
-                  <div class="row">
-                    <div class="large-9 columns">
-                      <h5>
-                        <%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %>
-                      </h5>
-                    </div>
-                  </div>
-                  <hr>
+                <h5>
+                <%= link_to "#{nmapscan.target}:#{nmapscan.port}", nmapscan_path(nmapscan) %>
+              </h5>
                   <% end %>
                     <% end %>
+              <hr>
+              <%= link_to "New", new_nmapscan_path %>
             </div>
 
             <div class="large-4 small-6 columns">
-              <div class="row">
                 <div class="text-center large-12 columns">
-                  Masscan Section
+                  <h3 style="font-weight:bolder;">
+                  MASSCAN
+                  </h3>
                 </div>
-              </div>
             </div>
 
 
             <div class="large-4 small-12 columns">
-              <h4>Reports</h4>
+              <div class="text-center large-12 columns">
+                  <h3 style="font-weight:bolder;">
+                    REPORTS
+                </h3>
+              </div>
               <hr>
               <div class="panel">
                 <h5><a href="#">Post Title 1</a></h5>
@@ -80,8 +82,6 @@
             </div>
 
           </div>
-        </div>
       </div>
 
-    </div>
   </div>

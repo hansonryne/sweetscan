@@ -141,7 +141,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -439,6 +439,8 @@ $include-html-global-classes: $include-html-classes;
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
 // $button-font-weight: $font-weight-normal;
+//Sweetscan Custom    
+$button-font-weight: bolder;
 // $button-font-align: center;
 
 // We use these to control various hover effects.

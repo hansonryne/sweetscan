@@ -1,3 +1,19 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #ff2), color-stop(0.3, #2f2), color-stop(0.45, #2f2), color-stop(0.6, #2ff), color-stop(0.75, #22f), color-stop(0.9, #f2f), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #ff2), color-stop(0.3, #2f2), color-stop(0.45, #2f2), color-stop(0.6, #2ff), color-stop(0.75, #22f), color-stop(0.9, #f2f), color-stop(1, #f22) );
+  
+    
+    
+    
+  
+  
+  
+  
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
