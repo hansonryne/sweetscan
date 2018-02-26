@@ -1,0 +1,2 @@
+module MasscansHelper
+end

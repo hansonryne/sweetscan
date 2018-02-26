@@ -14,7 +14,7 @@
       <li class="has-dropdown">
         <%= link_to "Nmap", nmapscans_path %>
         <ul class="dropdown">
-          <li class="">
+          <li>
             <%= link_to "New Scan", new_nmapscan_path %>
           </li>
           <li class="divider"></li>
@@ -26,14 +26,15 @@
         </ul>
       </li>
       <li class="divider"></li>
-      <li><a href="#">Main Item 2</a></li>
-      <li class="divider"></li>
       <li class="has-dropdown">
-        <a href="#">Main Item 3</a>
+        <%= link_to "Masscan", masscans_path %>
         <ul class="dropdown">
-          <li><a href="#">Dropdown Option</a></li>
-          <li><a href="#">Dropdown Option</a></li>
-          <li><a href="#">Dropdown Option</a></li>
+          <li class="">
+            <%= link_to "New Scan", new_masscan_path %>
+          </li>
+          <li class="divider"></li>
+          <li><label>Previous Scans</label></li>
+
           <li class="divider"></li>
           <li><a href="#">See All &rarr;</a></li>
         </ul>

@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180218160805) do
+ActiveRecord::Schema.define(version: 20180225234534) do
+
+  create_table "masscans", force: :cascade do |t|
+    t.string "target"
+    t.string "rate"
+    t.string "filename"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "nmapscans", force: :cascade do |t|
     t.string "filename"

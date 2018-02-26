@@ -1,75 +1,88 @@
-  <%= form_with scope: :nmapscan, url: nmapscans_path, local: true do |form| %>
-  <% if @nmapscan.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@nmapscan.errors.count, "error") %> prohibited this scan from being saved:</h2>
- 
-    <ul>
+<%= form_with scope: :nmapscan, url: nmapscans_path, local: true do |form| %>
+
+<% if @nmapscan.errors.any? %>
+<div id="error_explanation">
+  <h2>
+    <%= pluralize(@nmapscan.errors.count, "error") %> prohibited this scan from being saved:
+  </h2>
+  <ul>
     <% @nmapscan.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
+    <li>
+      <%= msg %>
+    </li>
     <% end %>
-    </ul>
-  </div>
-  <% end %>
+  </ul>
+</div>
+<% end %>
 
-  <p>
-    <%= form.label :target %></br>
-    <%= form.text_field :target %>
-  </p>
+<%= form.label :target %>
+<%= form.text_field :target, :value => "127.0.0.1" %>
 
-  <p>
-    <%= form.label :port, "Ports (Single, Range, or Comma Separated List)" %></br>
-    <%= form.text_field :port %>
-  </p>
+<%= form.label :port, "Ports (Single, Range, or Comma Separated List)" %>
+<%= form.number_field :port, :value => "22" %>
 
-  <p>
-    <%= form.label :evasion %></br>
-    <%= form.check_box :fragment %>
-    <%= label_tag :fragment, "Fragment Packets" %>
+<%= form.label "Evasion" %>
+<%= form.label "Fragment" %>
+<div class="switch">
+  <input name="nmapscan[fragment]" type="hidden" value="off">
+  <input id="fragment" name="nmapscan[fragment]" type="checkbox">
+  <%= label_tag :fragment %>
+</div>
+
 <!--    
-    <%= form.check_box :zombie %>
-    <%= label_tag :zombie, "Zombie Scan" %> 
+<%= form.check_box :zombie %>
+<%= label_tag :zombie, "Zombie Scan" %> 
 -->
-  </p>
 
-  <p>
-    <%= form.label :version_detection %></br>
-    <%= form.check_box :os %>
-    <%= label_tag :os, "Operating System" %></br>
-    <%= form.check_box :service_version %>
-    <%= label_tag :service_version, "Service Version" %>
-  </p>
+<%= form.label :version_detection %>
+<%= form.label "Operating System" %>
+<div class="switch">
+  <input name="nmapscan[os]" type="hidden" value="off">
+  <input id="os" name="nmapscan[os]" type="checkbox">
+  <%= label_tag :os %>
+</div>
 
-    <p>
-    <%= form.label :scripts %></br>
-    <%= form.check_box :safe %>
-    <%= label_tag :safe, "Safe" %></br>
-    <%= form.check_box :vuln %>
-    <%= label_tag :vuln, "Vulnerability" %>
-  </p>
+<%= form.label "Service Version" %>
+<div class="switch">
+  <input name="nmapscan[service_version]" type="hidden" value="off">
+  <input id="service_version" name="nmapscan[service_version]" type="checkbox">
+  <%= label_tag :service_version %>
+</div>
 
-    <p>
-    <%= form.label :speed %></br>
-    <%= form.radio_button :speed, "T1", {} %>
-    <%= label_tag :t1, "T1" %></br>
-    <%= form.radio_button :speed, "T2", {} %>
-    <%= label_tag :t2, "T2" %></br>
-    <%= form.radio_button :speed, "T3", {} %>
-    <%= label_tag :t3, "T3" %></br>
-    <%= form.radio_button :speed, "T4", {} %>
-    <%= label_tag :t4, "T4" %></br>
-    <%= form.radio_button :speed, "T5", {} %>
-    <%= label_tag :t5, "T5" %></br>
-  </p>
+<%= form.label :scripts %>
+<%= form.label "Safe" %>
+<div class="switch">
+  <input name="nmapscan[safe]" type="hidden" value="off">
+  <input id="safe" name="nmapscan[safe]" type="checkbox">
+  <%= label_tag :safe %>
+</div>
 
-  <p>
-    <%= form.label :ping %></br>
-    <%= form.radio_button :ping, "true", {} %>
-    <%= label_tag :ping_true, "Include a ping scan" %></br>
-    <%= form.radio_button :ping, "false", {} %>
-    <%= label_tag :ping_false, "Do not do a ping scan" %>
-  </p>
+<%= form.label "Vuln" %>
+<div class="switch">
+  <input name="nmapscan[vuln]" type="hidden" value="off">
+  <input id="vuln" name="nmapscan[vuln]" type="checkbox">
+  <%= label_tag :vuln %>
+</div>
 
-  <p>
-    <%= form.submit data: { confirm: 'Scan will run in the background' } %>
-  </p>
+<%= form.label :speed %>
+<div class="row">
+  <div class="small-10 columns">
+    <div class="range-slider" data-slider data-options="start:1; end: 5; step:1; display_selector: #speed; initial: 4; precision: 0;">
+      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+      <span class="range-slider-active-segment"></span>
+    </div>
+  </div>
+  <div class="small-2 columns">
+    <input type="number" id="speed" name="nmapscan[speed]" value="" />
+  </div>
+</div>
+
+<%= form.label :ping %>
+<div class="switch">
+  <input name="nmapscan[ping]" type="hidden" value="off">
+  <input id="ping" name="nmapscan[ping]" type="checkbox">
+  <%= label_tag :ping %>
+</div>
+
+<%= form.submit data: { confirm: 'Scan will run in the background' } %>
 <% end %>

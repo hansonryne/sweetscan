@@ -4,7 +4,6 @@ class Nmapscan < ApplicationRecord
   validates :port, :format => {:with => /\A([1-9]|[1-9][0-9]{1,3}|[1-5][0-9]{0,4}|6[0-4][0-9]{0,3}|65[0-4][0-9]{0,2}|655[0-2][0-9]|6553[0-5])\z/,
                                :message => " must be a number between 1 and 65535."}
   
-  #before_save :do_nmap_scan
   before_destroy :cleanup_files
   
   def do_nmap_scan
@@ -15,24 +14,24 @@ class Nmapscan < ApplicationRecord
     command = "nmap "
     
     case self.speed
-      when "T1"
+      when "1"
         command.concat("-T1 ")
-      when "T2"
+      when "2"
         command.concat("-T2 ")
-      when "T3"
+      when "3"
         command.concat("-T3 ")
-      when "T4"
+      when "4"
         command.concat("-T4 ")
-      when "T5"
+      when "5"
         command.concat("-T5 ")
       else
     end
     
-    if self.ping == "false"
+    if self.ping == "off"
       command.concat("-Pn ")
     end
 
-  	if self.fragment == "1"
+  	if self.fragment == "on"
   		command.concat("-f ")
   	end
 
@@ -40,23 +39,23 @@ class Nmapscan < ApplicationRecord
   	#	command.concat("-sI  ")
   	#end
 
-  	if self.service_version == "1"
+  	if self.service_version == "on"
   		command.concat("-sV ")
   	end
 
-  	if self.os == "1"
+  	if self.os == "on"
   		command.concat("-O ")
   	end
 
-  	if self.safe == "1"
+  	if self.safe == "on"
   		command.concat("-sC ")
   	end
 
-  	if self.vuln == "1"
+  	if self.vuln == "on"
   		command.concat("--script vuln ")
   	end
     
-    command.concat("-p #{self.port} #{target}")
+    command.concat("-p #{self.port} #{self.target}")
     
     #remove the > /dev/null eventually
     system "sudo #{command} -oX #{outfile} > /dev/null"

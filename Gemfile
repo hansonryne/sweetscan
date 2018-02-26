@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 #Use Dynamic Form for error handling
 gem 'dynamic_form'
 
+#Use Simple Form
+gem 'simple_form'
+
 #Use Foundation for Styling
 gem 'foundation-rails'
 

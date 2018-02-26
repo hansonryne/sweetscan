@@ -13,6 +13,14 @@ class NmapscansController < ApplicationController
     @nmapscan = Nmapscan.new
   end
 
+=begin
+#Debugger for form submission
+  def create
+    render plain: params[:nmapscan].inspect
+  end
+=end
+  
+#=begin
   def create    
     @nmapscan = Nmapscan.new(nmapscan_params)
     
@@ -28,6 +36,7 @@ class NmapscansController < ApplicationController
       end
     end
   end
+#=end
   
   def destroy
     @nmapscan = Nmapscan.find(params[:id])
