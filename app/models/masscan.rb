@@ -9,6 +9,9 @@ class Masscan < ApplicationRecord
     self.filename = datetime.strftime("%Y%m%d%H%Mmasscan")
     outfile = self.filename
     
+    #system 'ping -c1 -w1 $ip > /dev/null'
+    #mac=$(arp -a | grep $ip | cut -d " " -f 4 | cut -d " " -f 1)
+    
     command = "masscan -p1-65535 "
     
     case self.rate
@@ -34,7 +37,7 @@ class Masscan < ApplicationRecord
         command.concat("--rate=1000 ")
     end
     
-    command.concat("-p #{self.port} #{target}")
+    command.concat(" #{target}")
     
     #remove the > /dev/null eventually
     system "sudo #{command} -oX #{outfile} > /dev/null"

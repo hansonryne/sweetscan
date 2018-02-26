@@ -1,3 +1,38 @@
-<h1>
-  Testing masscan index
-</h1>
+<div class="row">
+  <% content_for :title do %>
+  Masscan
+<% end %>
+<h1>Listing Masscan Scans</h1>
+ <%= link_to 'New Masscan', new_masscan_path %>
+
+<% if @masscans[0].nil? %> 
+<h5>
+  You don't have any masscan results yet.  Try running a scan.
+</h5>
+<% else %>
+<table>
+  <tr>
+    <th>Target</th>
+    <th>Rate</th>
+    <th>Created At</th>
+    <th>Delete</th>
+  </tr>
+  <% @masscans.each do |masscan| %>
+    <tr>
+      <% if masscan.filename.present? %>
+        <td><%= masscan.target %></td>
+        <td><%= masscan.port %></td>
+        <td><%= masscan.updated_at %></td>
+        <td style="text-align: center;"><%= link_to '<i class="fi-trash" style="font-size: large;"></i>'.html_safe, masscan_path(masscan),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+<% end %>
+
+
+
+<%= button_to "Refresh List", masscans_path, :class => "button small", :method => :get %>
+</div>

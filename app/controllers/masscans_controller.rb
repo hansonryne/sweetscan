@@ -1,5 +1,6 @@
 class MasscansController < ApplicationController
   def index
+    @masscans = Masscan.all
   end
   
   def new

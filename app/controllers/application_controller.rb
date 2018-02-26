@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 
   def make_nmapscans_variable
    @nmapscans = Nmapscan.all 
+   @masscans = Masscan.all
   end
   
 end

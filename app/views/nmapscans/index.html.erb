@@ -1,23 +1,29 @@
+<div class="row">
 <% content_for :title do %>
   Nmap
 <% end %>
 <h1>Listing Nmap Scans</h1>
  <%= link_to 'New Nmap Scan', new_nmapscan_path %>
+
+<% if @nmapscans[0].nil? %>
+<h5>
+  You don't have any nmap results yet.  Try running a scan.
+</h5>
+<% else %>
 <table>
   <tr>
     <th>Target</th>
     <th>Port</th>
     <th>Created At</th>
+    <th>Delete</th>
   </tr>
- 
   <% @nmapscans.each do |nmapscan| %>
     <tr>
       <% if nmapscan.filename.present? %>
-        <td><%= nmapscan.target %></td>
+        <td><%= link_to "#{nmapscan.target}", nmapscan_path(nmapscan) %></td>
         <td><%= nmapscan.port %></td>
         <td><%= nmapscan.updated_at %></td>
-        <td><%= link_to 'Show', nmapscan_path(nmapscan) %></td>
-        <td><%= link_to 'Destroy', nmapscan_path(nmapscan),
+        <td style="text-align: center;"><%= link_to '<i class="fi-trash" style="font-size: large;"></i>'.html_safe, nmapscan_path(nmapscan),
                 method: :delete,
                 data: { confirm: 'Are you sure?' } %></td>
       <% end %>
@@ -25,5 +31,7 @@
   <% end %>
 </table>
 
+<% end %>
 
 <%= button_to "Refresh List", nmapscans_path, :class => "button small", :method => :get %>
+</div>
