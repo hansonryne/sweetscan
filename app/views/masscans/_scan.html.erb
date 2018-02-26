@@ -1,0 +1,32 @@
+<% xml_file = File.read("public/masscans/#{@masscan.filename}") %>
+<% doc = Nokogiri::XML.parse(xml_file) %>
+
+<table>
+  <tr>
+    <th>Target</th>
+    <th>Port</th>
+    <th>Created At</th>
+    <th>Delete</th>
+  </tr>
+  
+    <% doc.xpath("//host").each do |h| %>
+  <tr>
+    <td>
+      <%= "#{h.children[1].attributes["addr"].value}" %>
+    </td>
+    <td>
+      <% h.xpath("//ports/port").each do |p| %>
+      
+        <%= "#{p.attributes["portid"].value}" %><br>
+    </td>  
+      <% end %>
+    <% end %>
+  </tr>
+  
+</table>
+
+
+
+<div id="scanpartial">
+  <%= render file: "public/masscans/#{@masscan.filename}" %>
+</div>

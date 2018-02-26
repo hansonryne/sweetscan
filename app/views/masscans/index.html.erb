@@ -20,8 +20,8 @@
   <% @masscans.each do |masscan| %>
     <tr>
       <% if masscan.filename.present? %>
-        <td><%= masscan.target %></td>
-        <td><%= masscan.port %></td>
+        <td><%= link_to "#{masscan.target}", masscan_path(masscan) %></td>
+        <td><%= masscan.rate %></td>
         <td><%= masscan.updated_at %></td>
         <td style="text-align: center;"><%= link_to '<i class="fi-trash" style="font-size: large;"></i>'.html_safe, masscan_path(masscan),
                 method: :delete,

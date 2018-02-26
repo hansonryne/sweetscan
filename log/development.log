@@ -15780,3 +15780,1196 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 174.76.147.66 at 2018-02-25 19:49:18 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/nmapscans" for 174.76.147.66 at 2018-02-25 19:49:34 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-25 19:49:38 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (2.7ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 174.76.147.66 at 2018-02-26 09:08:26 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1159ms (Views: 1134.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 09:08:31 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.9ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (5.0ms)
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 09:27:09 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (13.1ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (201.4ms)
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (25.3ms)
+  Rendered layouts/_footer.html.erb (5.9ms)
+Completed 200 OK in 1012ms (Views: 871.9ms | ActiveRecord: 13.6ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "masscans" ("target", "rate", "filename", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["target", "72.190.168.75"], ["rate", "2000"], ["filename", "testmass.xml"], ["created_at", "2018-02-26 14:30:12.936549"], ["updated_at", "2018-02-26 14:30:12.936549"]]
+  [1m[35m (33.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMasscan Load (0.5ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 09:30:29 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (12.1ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (1714.8ms)
+Completed 500 Internal Server Error in 1895ms (ActiveRecord: 13.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `port' for #<Masscan:0x007f59ac1b1068>):
+    21:     <tr>
+    22:       <% if masscan.filename.present? %>
+    23:         <td><%= masscan.target %></td>
+    24:         <td><%= masscan.port %></td>
+    25:         <td><%= masscan.updated_at %></td>
+    26:         <td style="text-align: center;"><%= link_to '<i class="fi-trash" style="font-size: large;"></i>'.html_safe, masscan_path(masscan),
+    27:                 method: :delete,
+  
+app/views/masscans/index.html.erb:24:in `block in _app_views_masscans_index_html_erb__2045708166660676470_39833260'
+app/views/masscans/index.html.erb:20:in `_app_views_masscans_index_html_erb__2045708166660676470_39833260'
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 09:30:46 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.7ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (32.8ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (35.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 445ms (Views: 441.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 09:31:50 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (19.1ms)
+  [1m[36mNmapscan Load (1.0ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 155ms (Views: 142.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:31:52 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MasscansController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/nmapscans" for 174.76.147.66 at 2018-02-26 09:32:08 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/nmapscans/new" for 174.76.147.66 at 2018-02-26 09:32:11 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#new as HTML
+  Rendering nmapscans/new.html.erb within layouts/application
+  Rendered nmapscans/_form.html.erb (118.3ms)
+  Rendered nmapscans/new.html.erb within layouts/application (120.4ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 219ms (Views: 179.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/nmapscans" for 174.76.147.66 at 2018-02-26 09:32:15 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aNvHhHkWq2V5DXYIhXfkYS92QSYYOURC9flIwFLr6/UQdQ/aif/qiBosgsVAdSEtfDRyzBPIKPQWeK3LOwvOaA==", "nmapscan"=>{"target"=>"127.0.0.1", "port"=>"22", "fragment"=>"off", "os"=>"off", "service_version"=>"off", "safe"=>"off", "vuln"=>"off", "speed"=>"", "ping"=>"off"}, "commit"=>"Save Nmapscan"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "nmapscans" ("target", "port", "fragment", "os", "service_version", "safe", "vuln", "speed", "ping", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["target", "127.0.0.1"], ["port", "22"], ["fragment", "off"], ["os", "off"], ["service_version", "off"], ["safe", "off"], ["vuln", "off"], ["speed", ""], ["ping", "off"], ["created_at", "2018-02-26 14:32:15.063424"], ["updated_at", "2018-02-26 14:32:15.063424"]]
+  [1m[35m (29.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued NmapScanJob (Job ID: 7f37805a-a96d-42ef-92d3-c487a1e0ad30) to Async(default) with arguments: #<GlobalID:0x007f59b0120870 @uri=#<URI::GID gid://sweetscan/Nmapscan/43>>
+Redirected to https://sweetscan-hansonryne337418.codeanyapp.com/nmapscans
+Completed 302 Found in 135ms (ActiveRecord: 30.5ms)
+
+
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" WHERE "nmapscans"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+[ActiveJob] [NmapScanJob] [7f37805a-a96d-42ef-92d3-c487a1e0ad30] Performing NmapScanJob (Job ID: 7f37805a-a96d-42ef-92d3-c487a1e0ad30) from Async(default) with arguments: #<GlobalID:0x007f59b00ce750 @uri=#<URI::GID gid://sweetscan/Nmapscan/43>>
+[ActiveJob] [NmapScanJob] [7f37805a-a96d-42ef-92d3-c487a1e0ad30]   [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [NmapScanJob] [7f37805a-a96d-42ef-92d3-c487a1e0ad30]   [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "nmapscans" SET "filename" = ?, "updated_at" = ? WHERE "nmapscans"."id" = ?[0m  [["filename", "201802261432nmap"], ["updated_at", "2018-02-26 14:32:15.610041"], ["id", 43]]
+[ActiveJob] [NmapScanJob] [7f37805a-a96d-42ef-92d3-c487a1e0ad30]   [1m[35m (28.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [NmapScanJob] [7f37805a-a96d-42ef-92d3-c487a1e0ad30] Performed NmapScanJob (Job ID: 7f37805a-a96d-42ef-92d3-c487a1e0ad30) from Async(default) in 439.17ms
+Started GET "/nmapscans" for 174.76.147.66 at 2018-02-26 09:32:15 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nmapscans/43" for 174.76.147.66 at 2018-02-26 09:32:17 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" WHERE "nmapscans"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering nmapscans/show.html.erb within layouts/application
+  Rendering public/nmapscans/201802261432nmap.html
+  Rendered public/nmapscans/201802261432nmap.html (0.9ms)
+  Rendered nmapscans/_scan.html.erb (3.7ms)
+  Rendered nmapscans/show.html.erb within layouts/application (7.4ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 69ms (Views: 56.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 09:33:30 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (3.2ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:33:32 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (3.7ms)
+  Rendered masscans/show.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `filename' for nil:NilClass):
+    1: <div id="scanpartial">
+    2:   <%= render file: "public/masscans/#{@masscan.filename}" %>
+    3: </div>
+  
+app/views/masscans/_scan.html.erb:2:in `_app_views_masscans__scan_html_erb___2980768010566875759_40403940'
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_40679540'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:34:31 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.8ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.5ms)
+  Rendered masscans/_scan.html.erb (3.6ms)
+  Rendered masscans/show.html.erb within layouts/application (4.9ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (31.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 120ms (Views: 92.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:38:32 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.8ms)
+  Rendered masscans/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No such file or directory @ rb_sysopen - blossom.xml):
+    1: <% doc = File.open("blossom.xml") { |f| Nokogiri::XML(f) } %>
+    2: 
+    3: 
+    4: <div>
+  
+app/views/masscans/_scan.html.erb:1:in `initialize'
+app/views/masscans/_scan.html.erb:1:in `open'
+app/views/masscans/_scan.html.erb:1:in `_app_views_masscans__scan_html_erb___2980768010566875759_70011591044320'
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_70011591088280'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:39:05 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.5ms)
+  Rendered masscans/_scan.html.erb (55.1ms)
+  Rendered masscans/show.html.erb within layouts/application (56.3ms)
+  [1m[36mNmapscan Load (0.7ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 103ms (Views: 100.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:39:21 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (4.0ms)
+  Rendered masscans/show.html.erb within layouts/application (5.2ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:39:30 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (3.5ms)
+  Rendered masscans/show.html.erb within layouts/application (4.6ms)
+  [1m[36mNmapscan Load (0.5ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:47:32 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Nmapscan Load (0.0ms)[0m  [1m[34mSELECT  "nmapscans".* FROM "nmapscans" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Masscan Load (0.0ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered masscans/_scan.html.erb (331.5ms)
+  Rendered masscans/show.html.erb within layouts/application (332.8ms)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `dox' for #<#<Class:0x0000000480d5a0>:0x007f59b88cf9d8>
+Did you mean?  doc):
+    1: <% xml_file = File.read("public/masscans/#{@masscan.filename}") %>
+    2: <% doc = Nokogiri::XML.parse(xml_file) %>
+    3: <% dox.xpath("//ports").each do |po| %>
+    4: 
+    5: <h5>
+    6:     <%= puts "\nPort : "+po.xpath('portid').text %>
+  
+app/views/masscans/_scan.html.erb:3:in `_app_views_masscans__scan_html_erb___2980768010566875759_70011662414400'
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_70011662551440'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:47:53 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (14.1ms)
+  Rendered masscans/show.html.erb within layouts/application (15.2ms)
+  [1m[36mNmapscan Load (0.9ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:48:10 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (3.9ms)
+  Rendered masscans/show.html.erb within layouts/application (5.1ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:48:35 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (3.5ms)
+  Rendered masscans/show.html.erb within layouts/application (4.8ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:48:55 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (4.4ms)
+  Rendered masscans/show.html.erb within layouts/application (5.8ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 80.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 09:49:04 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (3.3ms)
+  Rendered masscans/show.html.erb within layouts/application (4.5ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:13:10 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (4.4ms)
+  Rendered masscans/show.html.erb within layouts/application (5.8ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:13:22 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (3.6ms)
+  Rendered masscans/show.html.erb within layouts/application (4.8ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:14:08 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (4.3ms)
+  Rendered masscans/show.html.erb within layouts/application (5.7ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/nmapscans" for 174.76.147.66 at 2018-02-26 10:17:40 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by NmapscansController#index as HTML
+  Rendering nmapscans/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered nmapscans/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 10:18:37 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (3.6ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:18:38 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (6.8ms)
+  Rendered masscans/show.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `attributes' for #<Nokogiri::XML::NodeSet:0x007f59b9d024a0>
+Did you mean?  attribute):
+     9:     <th>Delete</th>
+    10:   </tr>
+    11:   <% doc.xpath("//host").each do |h| %>
+    12:     <%= "\nPort : #{h.xpath("//ports/port").attributes["portid"].value}" %>
+    13:   <% end %>
+    14: </table>
+    15: 
+  
+app/views/masscans/_scan.html.erb:12:in `block in _app_views_masscans__scan_html_erb___2980768010566875759_70011673196300'
+app/views/masscans/_scan.html.erb:11:in `_app_views_masscans__scan_html_erb___2980768010566875759_70011673196300'
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_70011673289240'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:23:07 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.0ms)
+  Rendered masscans/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+<div id="scanpartial">
+                    ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+.append=( render file: "public/masscans/#{@masscan.filename}
+                              ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:22: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:22: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/masscans/_scan.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/masscans/_scan.html.erb:22: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:22: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_70011672140460'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:23:23 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (4.3ms)
+  Rendered masscans/show.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+<div id="scanpartial">
+                    ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+.append=( render file: "public/masscans/#{@masscan.filename}
+                              ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/masscans/_scan.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/masscans/_scan.html.erb:23: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:23: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_70011667090100'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:24:56 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (0.9ms)
+  Rendered masscans/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:14: unterminated string meets end of file
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:14: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/masscans/_scan.html.erb:14: unterminated string meets end of file
+app/views/masscans/_scan.html.erb:14: syntax error, unexpected end-of-input, expecting ')'
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__4047311021138759265_39592340'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:25:15 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (3.9ms)
+  Rendered masscans/show.html.erb within layouts/application (5.0ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:31:42 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.6ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (5.1ms)
+  Rendered masscans/show.html.erb within layouts/application (7.4ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (30.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 401ms (Views: 361.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 10:32:54 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (7.4ms)
+  Rendered masscans/show.html.erb within layouts/application (8.7ms)
+  [1m[36mNmapscan Load (0.8ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 95.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 174.76.147.66 at 2018-02-26 10:33:35 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `port' for #<Masscan:0x007f2855b87d40>):
+    66:               <% @masscans.reverse.each do |masscan| %>
+    67:                 <% if masscan.filename.present? %>
+    68:                 <h5>
+    69:                 <%= link_to "#{masscan.target}:#{masscan.port}", masscan_path(masscan) %>
+    70:               </h5>
+    71:                   <% end %>
+    72:                     <% end %>
+  
+app/views/welcome/index.html.erb:69:in `block in _app_views_welcome_index_html_erb___3951526813291444609_69905607378920'
+app/views/welcome/index.html.erb:66:in `each'
+app/views/welcome/index.html.erb:66:in `_app_views_welcome_index_html_erb___3951526813291444609_69905607378920'
+Started GET "/" for 174.76.147.66 at 2018-02-26 11:10:05 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.7ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (64.6ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `port' for #<Masscan:0x00000003adfbf8>):
+    66:               <% @masscans.reverse.each do |masscan| %>
+    67:                 <% if masscan.filename.present? %>
+    68:                 <h5>
+    69:                 <%= link_to "#{masscan.target}:#{masscan.port}", masscan_path(masscan) %>
+    70:               </h5>
+    71:                   <% end %>
+    72:                     <% end %>
+  
+app/views/welcome/index.html.erb:69:in `block in _app_views_welcome_index_html_erb___2727566652100976710_70211575345280'
+app/views/welcome/index.html.erb:66:in `each'
+app/views/welcome/index.html.erb:66:in `_app_views_welcome_index_html_erb___2727566652100976710_70211575345280'
+Started GET "/" for 174.76.147.66 at 2018-02-26 11:10:39 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mNmapscan Load (0.2ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1220ms (Views: 1218.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 11:11:21 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.7ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (3.9ms)
+  [1m[36mNmapscan Load (0.6ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/masscans" for 174.76.147.66 at 2018-02-26 11:13:06 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (3.0ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:13:09 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.4ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (4.6ms)
+  Rendered masscans/show.html.erb within layouts/application (5.9ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 64ms (Views: 52.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:19:03 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.5ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (5.3ms)
+  Rendered masscans/show.html.erb within layouts/application (6.7ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 76.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:19:44 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (3.5ms)
+  Rendered masscans/show.html.erb within layouts/application (4.7ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:19:47 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.5ms)
+  Rendered masscans/_scan.html.erb (3.8ms)
+  Rendered masscans/show.html.erb within layouts/application (5.0ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:19:51 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.6ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (3.5ms)
+  Rendered masscans/show.html.erb within layouts/application (4.7ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:20:21 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (4.6ms)
+  Rendered masscans/show.html.erb within layouts/application (5.9ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:20:36 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.5ms)
+  Rendered masscans/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+    </td>      
+     ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+</table>
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+
+
+
+<div id="scanpartial">
+  '.freeze;@output_buffer.append=( render file: "public/m
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb___3495503248326485759_70211583192040'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:20:40 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.1ms)
+  Rendered masscans/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+    </td>      
+     ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+</table>
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+
+
+
+<div id="scanpartial">
+  '.freeze;@output_buffer.append=( render file: "public/m
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb___3495503248326485759_70211578574380'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:20:56 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.1ms)
+  Rendered masscans/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+    </td>      
+     ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+</table>
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+
+
+
+<div id="scanpartial">
+  '.freeze;@output_buffer.append=( render file: "public/m
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb___3495503248326485759_70211616143440'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:21:15 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.0ms)
+  Rendered masscans/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+    </td>      
+     ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+</table>
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+
+
+
+<div id="scanpartial">
+  '.freeze;@output_buffer.append=( render file: "public/m
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__1471588227224330889_35535860'
+Started GET "/masscans/" for 174.76.147.66 at 2018-02-26 11:21:20 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#index as HTML
+  Rendering masscans/index.html.erb within layouts/application
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered masscans/index.html.erb within layouts/application (5.5ms)
+  [1m[36mNmapscan Load (0.4ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  Rendered layouts/_header.html.erb (29.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 404ms (Views: 398.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:21:22 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.5ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (1.6ms)
+  Rendered masscans/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+    </td>      
+     ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+</table>
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+
+
+
+<div id="scanpartial">
+  '.freeze;@output_buffer.append=( render file: "public/m
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:20: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:23: unknown regexp options - tr
+app/views/masscans/_scan.html.erb:25: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:30: unknown regexp options - aca
+app/views/masscans/_scan.html.erb:30: end pattern with unmatched parenthesis: /table>
+app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__1471588227224330889_70326472154020'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:21:54 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendered masscans/_scan.html.erb (12.5ms)
+  Rendered masscans/show.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:25: unknown regexp options - tabl
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:29: syntax error, unexpected '<'
+<div id="scanpartial">
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<', expecting ')'
+</div>'.freeze;
+ ^
+/home/cabox/workspace/sweetscan/app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file):
+  
+app/views/masscans/_scan.html.erb:25: unknown regexp options - tabl
+app/views/masscans/_scan.html.erb:29: syntax error, unexpected '<'
+app/views/masscans/_scan.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/masscans/_scan.html.erb:31: unterminated regexp meets end of file
+app/views/masscans/show.html.erb:1:in `_app_views_masscans_show_html_erb__1471588227224330889_70326467770020'
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:22:17 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (7.6ms)
+  Rendered masscans/show.html.erb within layouts/application (8.9ms)
+  [1m[36mNmapscan Load (3.2ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.4ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 87ms (Views: 80.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:22:53 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.3ms)
+  Rendered masscans/_scan.html.erb (3.6ms)
+  Rendered masscans/show.html.erb within layouts/application (4.8ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.3ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (8.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 61.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/masscans/1" for 174.76.147.66 at 2018-02-26 11:23:17 -0500
+Cannot render console from 174.76.147.66! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MasscansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT  "masscans".* FROM "masscans" WHERE "masscans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering masscans/show.html.erb within layouts/application
+  Rendering public/masscans/testmass.xml
+  Rendered public/masscans/testmass.xml (0.4ms)
+  Rendered masscans/_scan.html.erb (3.8ms)
+  Rendered masscans/show.html.erb within layouts/application (5.5ms)
+  [1m[36mNmapscan Load (0.3ms)[0m  [1m[34mSELECT "nmapscans".* FROM "nmapscans"[0m
+  [1m[36mMasscan Load (0.2ms)[0m  [1m[34mSELECT "masscans".* FROM "masscans"[0m
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.7ms)
+
+

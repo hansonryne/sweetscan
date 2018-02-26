@@ -29,6 +29,7 @@ class MasscansController < ApplicationController
   end
   
   def show
+        @masscan = Masscan.find(params[:id])
   end
   
   def destroy

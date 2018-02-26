@@ -34,9 +34,10 @@
           </li>
           <li class="divider"></li>
           <li><label>Previous Scans</label></li>
-
-          <li class="divider"></li>
-          <li><a href="#">See All &rarr;</a></li>
+          <% @masscans.reverse.first(3).each do |masscan| %>
+            <li><%= link_to "#{masscan.target}", masscan_path(masscan) %></li>
+          <% end %>
+          <li><%= link_to 'See all &rarr;'.html_safe, masscans_path %></li>
         </ul>
       </li>
     </ul>
